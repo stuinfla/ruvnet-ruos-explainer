@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ruos — An agentic desktop — the cursor moves before you do.</title>
+  <meta name="description" content="An agentic desktop — the cursor moves before you do.">
+  <meta name="author" content="Independent explainer for ruvnet's ruos — built by Stuart Kerr at ISOvision.ai">
+  <link rel="canonical" href="https://ruos-explainer.netlify.app/">
+  <meta name="theme-color" content="#4be3c8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ruos — An agentic desktop — the cursor moves before you do.">
+  <meta property="og:description" content="An agentic desktop — the cursor moves before you do.">
+  <meta property="og:url" content="https://ruos-explainer.netlify.app/">
+  <meta property="og:image" content="https://ruos-explainer.netlify.app/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ruos — An agentic desktop — the cursor moves before you do.">
+  <meta name="twitter:description" content="An agentic desktop — the cursor moves before you do.">
+  <meta name="twitter:image" content="https://ruos-explainer.netlify.app/assets/social-card.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ruos",
+  "description": "An agentic desktop — the cursor moves before you do.",
+  "url": "https://ruos-explainer.netlify.app/",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform",
+  "image": "https://ruos-explainer.netlify.app/assets/social-card.png",
+  "author": {
+    "@type": "Person",
+    "name": "ruvnet"
+  },
+  "codeRepository": "https://github.com/ruvnet/ruos",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="prov-banner">
+    <div class="wrap prov-banner-inner">
+      <p class="prov-attr">An independent explainer for <strong>ruvnet</strong>'s <a href="https://github.com/ruvnet/ruos" target="_blank" rel="noopener">ruos</a> — built to help you actually implement it.</p>
+      <p class="prov-live"><span class="prov-dot" aria-hidden="true">&#9679;</span> source <code>github.com/ruvnet/ruos</code></p>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="ruos explainer home">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="3" width="26" height="26" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"></rect>
+        <rect x="9" y="9" width="14" height="14" rx="4" fill="var(--accent-2)"></rect>
+        <circle cx="16" cy="16" r="3" fill="var(--on-accent)"></circle>
+      </svg>
+        <span>ruos</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#what-it-is">What it is</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#get-started">Get started</a>
+        <a href="#the-pack">AI pack</a>
+        <a href="https://github.com/ruvnet/ruos" target="_blank" rel="noopener">GitHub &#8599;</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+  <a id="top"></a>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">A computer that acts on its own</span>
+          <h1>ruOS: a desktop that runs itself</h1>
+          <p class="lede">ruOS is a real computer, always on, that does not wait for you to click. Ask it to research something, write for you, fix code, or manage itself, and it gets started right away. It is not just a cloud copy of your laptop. It is built to act like a coworker who already has the keys.</p>
+          <p class="sub">You can still watch, or take the wheel, from a browser, an iPad, or a Mac app. But the reason it exists is that it can also go do the work by itself.</p>
+          <p class="attrib-lede">An <strong>independent explainer</strong> for <strong>rUv <span class="attrib-handle">(ruvnet)</span></strong>'s <a href="https://github.com/ruvnet/ruos" target="_blank" rel="noopener">ruos</a> — built to take you from "never seen it" to "ready to implement".</p>
+          <div class="cta-row">
+          <a class="cta" href="#get-started">Get started</a>
+          <a class="cta ghost" href="https://github.com/ruvnet/ruos" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        <div class="meta-row"><span><b>What runs on it</b> A full Linux desktop plus a built-in team of AI helpers</span><span><b>Reach it via</b> Browser, iPad app, or Mac app — all the same desktop</span></div>
+        </div>
+        <figure class="hero-art">
+          <button type="button" class="diagram-zoom" data-src="assets/hero.png" data-alt="ruos: A dark GNOME desktop glows on a pane of glass in an empty room; the cursor drifts to a spot, clicks, and something happens — nobody touched the mouse." aria-label="Enlarge: ruos: A dark GNOME desktop glows on a pane of glass in an empty room; the cursor drifts to a spot, clicks, and something happens — nobody touched the mouse."><img src="assets/hero.png" alt="ruos: A dark GNOME desktop glows on a pane of glass in an empty room; the cursor drifts to a spot, clicks, and something happens — nobody touched the mouse."></button>
+        </figure>
+      </div>
+      <div class="hero-refusal" role="img" aria-label="The assistant sends a click into a real computer, using the same login you would use. The desktop's cursor moves on its own, presses Next, and the install finishes. A screenshot travels back to the agent. Nothing is left open to the internet: the assistant comes in through the same door you do."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="hs-t hs-d" data-archetype="journey">
+  <title id="hs-t">ruOS — the assistant works a real computer by itself, through the same login you use</title>
+  <desc id="hs-d">The assistant sends a click into a real computer, using the same login you would use. The desktop's cursor moves on its own, presses Next, and the install finishes. A screenshot travels back to the agent. Nothing is left open to the internet: the assistant comes in through the same door you do.</desc>
+  <style>
+    .bg { fill: #05070a; }
+    .panel { fill: #0f1720; stroke: #233041; stroke-width: 1.5; rx: 12; }
+    .ink { fill: #e6f1f5; font-family: "Inter", system-ui, sans-serif; font-size: 17px; }
+    .dim { fill: #a8bac6; font-family: "Inter", system-ui, sans-serif; font-size: 14px; }
+    .mono { fill: #4be3c8; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 15px; }
+    .label { fill: #5c707d; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .08em; }
+    .wire { stroke: #233041; stroke-width: 2; fill: none; }
+    .boundary { stroke: #4be3c8; stroke-width: 2; stroke-dasharray: 6 6; opacity: .75; }
+    .shut { stroke: #f2545b; stroke-width: 2.5; }
+
+    /* the request travels agent -> desktop, then the reply travels back */
+    .req  { animation: req 9s linear infinite; }
+    .rep  { animation: rep 9s linear infinite; opacity: 0; }
+    /* the desktop cursor moves to the button and presses it */
+    .cur  { animation: cur 9s ease-in-out infinite; }
+    .ring { animation: ring 9s linear infinite; opacity: 0; }
+    /* the button lights while pressed; the bar completes; the state text swaps */
+    .btn      { animation: btn 9s linear infinite; }
+    .bar      { animation: bar 9s linear infinite; }
+    .state-run  { animation: srun 9s linear infinite; }
+    .state-done { animation: sdone 9s linear infinite; opacity: 0; }
+
+    @keyframes req  { 0%,4% { transform: translateX(0); opacity: 0 } 6% { opacity: 1 } 26% { transform: translateX(420px); opacity: 1 } 30%,100% { transform: translateX(420px); opacity: 0 } }
+    @keyframes cur  { 0%,30% { transform: translate(0,0) } 44% { transform: translate(196px,-104px) } 100% { transform: translate(196px,-104px) } }
+    @keyframes ring { 0%,44% { opacity: 0; transform: scale(.4) } 48% { opacity: .9; transform: scale(1) } 56%,100% { opacity: 0; transform: scale(1.5) } }
+    @keyframes btn  { 0%,44% { fill: #141d29; stroke: #4be3c8 } 48%,60% { fill: #4be3c8; stroke: #4be3c8 } 64%,100% { fill: #141d29; stroke: #4be3c8 } }
+    @keyframes bar  { 0%,48% { width: 168px } 62%,100% { width: 280px } }
+    @keyframes srun { 0%,58% { opacity: 1 } 62%,100% { opacity: 0 } }
+    @keyframes sdone{ 0%,58% { opacity: 0 } 62%,100% { opacity: 1 } }
+    @keyframes rep  { 0%,64% { transform: translateX(0); opacity: 0 } 68% { opacity: 1 } 88% { transform: translateX(-420px); opacity: 1 } 92%,100% { transform: translateX(-420px); opacity: 0 } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .req, .rep, .cur, .ring, .btn, .bar, .state-run, .state-done { animation: none; }
+      .req { opacity: 0 } .rep { opacity: 0 } .ring { opacity: 0 }
+      .cur { transform: translate(196px,-104px) }
+      .btn { fill: #141d29; stroke: #4be3c8 }
+      .bar { width: 280px }
+      .state-run { opacity: 0 } .state-done { opacity: 1 }
+    }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1200" height="420"/>
+
+  <!-- LEFT: the agent -->
+  <rect class="panel" x="40" y="150" width="250" height="120"/>
+  <text class="label" x="64" y="182">THE ASSISTANT</text>
+  <text class="ink" x="64" y="212">asks for a click</text>
+  <text class="dim" x="64" y="240">nobody is at the desk</text>
+
+  <!-- the wire between them -->
+  <path class="wire" d="M290 210 H 830"/>
+
+  <!-- the boundary: an SSH session, not an open port -->
+  <line class="boundary" x1="560" y1="96" x2="560" y2="330"/>
+  <text class="label" x="516" y="86">THE SAME LOGIN YOU USE</text>
+  <g transform="translate(560,300)">
+    <rect x="-34" y="0" width="68" height="40" rx="8" fill="#0f1720" stroke="#233041" stroke-width="1.5"/>
+    <text class="label" x="-30" y="26" style="fill:#f2545b">closed</text>
+    <line class="shut" x1="-26" y1="38" x2="26" y2="2"/>
+  </g>
+  <text class="label" x="492" y="368">NOTHING IS LEFT OPEN TO THE INTERNET</text>
+
+  <!-- the request in flight -->
+  <g class="req" transform="translate(300,0)">
+    <rect x="0" y="192" width="120" height="34" rx="8" fill="#0b1018" stroke="#4be3c8" stroke-width="1.5"/>
+    <text class="mono" x="14" y="215">click that</text>
+  </g>
+
+  <!-- the reply in flight -->
+  <g class="rep" transform="translate(720,0)">
+    <rect x="0" y="192" width="132" height="34" rx="8" fill="#0b1018" stroke="#f2b04c" stroke-width="1.5"/>
+    <text class="mono" x="14" y="215" style="fill:#f2b04c">a picture back</text>
+  </g>
+
+  <!-- RIGHT: the real desktop -->
+  <rect class="panel" x="830" y="96" width="330" height="234"/>
+  <rect x="830" y="96" width="330" height="34" rx="12" fill="#141d29"/>
+  <circle cx="852" cy="113" r="5" fill="#f2545b"/>
+  <circle cx="870" cy="113" r="5" fill="#f2b04c"/>
+  <circle cx="888" cy="113" r="5" fill="#4be3c8"/>
+  <text class="label" x="906" y="118">A REAL COMPUTER</text>
+
+  <text class="state-run dim" x="856" y="176">Installing…</text>
+  <text class="state-done dim" x="856" y="176" style="fill:#4be3c8">Done</text>
+
+  <rect x="856" y="192" width="280" height="14" rx="7" fill="#141d29"/>
+  <rect class="bar" x="856" y="192" height="14" rx="7" fill="#4be3c8"/>
+
+  <rect class="btn" x="1010" y="252" width="126" height="44" rx="10" stroke-width="2"/>
+  <text class="ink" x="1042" y="280" style="font-size:16px">Next &gt;</text>
+
+  <!-- the desktop's own cursor, moving on its own -->
+  <g class="cur" transform="translate(0,0)">
+    <g transform="translate(876,360)">
+      <circle class="ring" cx="0" cy="0" r="16" fill="none" stroke="#4be3c8" stroke-width="2"/>
+      <path d="M0 0 L0 20 L5 15 L9 23 L12 21 L8 14 L15 13 Z" fill="#e6f1f5" stroke="#05070a" stroke-width="1"/>
+    </g>
+  </g>
+
+  <text class="label" x="830" y="392">NOBODY TOUCHED THE MOUSE</text>
+</svg>
+</div>
+    </div>
+  </section>
+    <div class="sections">
+      <div class="wrap">
+    <details class="section" id="problem" open>
+      <summary>
+        <span class="num">01</span>
+        <span class="head-text">
+          <h2>Assistants that talk but can't finish the job</h2>
+          <span class="q">What breaks today, and why does it hurt?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Even a great AI assistant hits real walls. It cannot click a button by itself. It forgets everything once the chat ends. It can only work on one piece of a big job at a time.</p>
+      <p>Picture asking an assistant to set up a new app for you. It writes commands and edits files, and gets you most of the way there. Then a window pops up asking you to click 'Next.' The assistant stops. You become its hands, every single time the task leaves the world of text.</p>
+      <p>Even when there is no window to click, other walls show up. Close the chat and the assistant forgets everything it just learned. Give it five things to do, and it works through them one at a time. It has no way to split the work.</p>
+      
+      <figure class="figure">
+        <span class="tier friendly">The problem</span>
+        <button type="button" class="diagram-zoom" data-src="assets/problem.png" data-alt="ruos: the problem" aria-label="Enlarge: ruos: the problem"><img src="assets/problem.png" alt="ruos: the problem" loading="lazy"></button>
+      </figure>
+      </div>
+    </details>
+
+    <details class="section" id="what-it-is" open>
+      <summary>
+        <span class="num">02</span>
+        <span class="head-text">
+          <h2>A computer with its own team of assistants already inside</h2>
+          <span class="q">What is this thing, concretely?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">ruOS is a full computer that runs all the time. An AI stack is already installed on it. That stack can split one job across several assistants working at once. It also remembers what it tried before, across sessions. And it can reach out and click, type, and use the screen exactly like a person.</p>
+      <p>Underneath, it is an ordinary desktop. It has the same screens, windows, and menus you already click through on a laptop. It just happens to run on a machine in the cloud, instead of a box under your desk.</p>
+      <p>On top of that desktop sits a built-in team. Several assistants can split one job and work on it in parallel. A shared memory survives between sessions. Later work recalls what an earlier session already tried, instead of starting from zero.</p>
+      <p>A separate control channel lets an attached assistant see the screen, move the mouse, type, and run commands. It can also trigger system actions, like installing or restarting, the same way you would do it yourself.</p>
+      <p>Right now, one ruOS desktop runs for one operator. A self-serve way to sign up for your own hosted desktop does not exist yet.</p>
+      
+      <figure class="figure diagram concept">
+        <span class="tier tech">The big idea</span>
+        <button type="button" class="diagram-zoom" data-src="assets/big-idea.svg" data-alt="You can reach ruOS through a browser, the iPad app or the Mac app, and an AI agent reaches it through ruos-mcp. All four land on the same real Linux desktop, so the agent works on exactly the screen you see." aria-label="Enlarge: You can reach ruOS through a browser, the iPad app or the Mac app, and an AI agent reaches it through ruos-mcp. All four land on the same real Linux desktop, so the agent works on exactly the screen you see."><img src="assets/big-idea.svg" alt="You can reach ruOS through a browser, the iPad app or the Mac app, and an AI agent reaches it through ruos-mcp. All four land on the same real Linux desktop, so the agent works on exactly the screen you see." loading="lazy"></button>
+      </figure>
+      
+      <table class="tbl"><caption class="visually-hidden">The desktop underneath</caption>
+        <thead><tr><th>Aspect</th><th>Detail</th></tr></thead>
+        <tbody>
+        <tr><td>Base machine</td><td>A regular Linux computer, running in the cloud instead of on a desk</td></tr>
+        <tr><td>Team installed on it</td><td>Several AI assistants that can split a job and work in parallel</td></tr>
+        <tr><td>Memory installed on it</td><td>A shared memory that survives between sessions, so work is not repeated</td></tr>
+        <tr><td>Control channel</td><td>Lets an attached assistant see the screen, move the mouse, type, and run commands</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </details>
+
+    <details class="section" id="the-insight" open>
+      <summary>
+        <span class="num">03</span>
+        <span class="head-text">
+          <h2>Why teaching it to click is the clever part</h2>
+          <span class="q">What's the one idea that makes it click?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">Most programs only talk to a computer through a special connection built just for machines. ruOS skips that step. Its assistant uses the screen, the mouse, and the keyboard the same way a person does.</p>
+      <p>That means the assistant is not stuck waiting for a program to build it a special doorway in. If a person can open an app, click a menu, or fill in a settings box, the assistant can do the same thing. It works on any program, not just the ones built to expect a machine.</p>
+      <p>It walks in through the same login you would already use yourself, too. There is no separate machine-only entrance left open on the internet. Whoever can open that login can drive the desktop, and nobody else can.</p>
+      
+      <figure class="figure diagram concept">
+        <span class="tier tech">The aha</span>
+        <button type="button" class="diagram-zoom" data-src="assets/insight.svg" data-alt="Security isn't a port to lock down — it's simply who is allowed to open the SSH session." aria-label="Enlarge: Security isn't a port to lock down — it's simply who is allowed to open the SSH session."><img src="assets/insight.svg" alt="Security isn't a port to lock down — it's simply who is allowed to open the SSH session." loading="lazy"></button>
+      </figure>
+      <p class="oh">The assistant doesn't get a fake practice screen or a secret back door — it gets the same mouse, keyboard, and login you'd use yourself.</p>
+      </div>
+    </details>
+
+    <details class="section" id="how-it-works" open>
+      <summary>
+        <span class="num">04</span>
+        <span class="head-text">
+          <h2>How the control channel actually works</h2>
+          <span class="q">How does it actually work under the hood?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">The piece that gives an AI client control is a small Rust program, ruos-mcp, that speaks the Model Context Protocol over the desktop's own remote login rather than an open network port.</p>
+      <p>ruos-mcp talks JSON-RPC 2.0 (a plain request-and-response message format) over stdio (a running program's standard input/output text stream), and that stream is carried inside an ordinary SSH (secure shell — an encrypted remote-login connection) session into the desktop. The security boundary is deliberately simple: whoever can open that SSH session can drive the desktop; nothing here listens on an open network port.</p>
+      <p>Once connected, the server exposes a fixed catalog of tools: screen capture and mouse/keyboard control built on xdotool and scrot (standard Linux command-line utilities for driving and photographing a desktop); a run_shell tool that runs an arbitrary command and returns its output; and a system_action tool (install / optimize / update / status / restart) that's proxied to a small executor process listening only on the machine's own loopback address.</p>
+      <p>Two of those tools have a narrower reach than the rest, and it's worth being precise about it: system_action needs that separate executor process running on the desktop, and desktop_resolution needs a further resolution-reporting feature on top of the executor — so on a given desktop, screenshot, mouse, and run_shell are the tools most likely to just work, and the other two are the ones to check for first.</p>
+      <div class="dual">
+      <figure class="figure diagram">
+        <span class="tier tech">Architecture</span>
+        <button type="button" class="diagram-zoom" data-src="assets/architecture.svg" data-alt="Reader must hold: the MCP client, the SSH transport, the Rust ruos-mcp binary, its OS control tools, and the desktop executor it talks to." aria-label="Enlarge: Reader must hold: the MCP client, the SSH transport, the Rust ruos-mcp binary, its OS control tools, and the desktop executor it talks to."><img src="assets/architecture.svg" alt="Reader must hold: the MCP client, the SSH transport, the Rust ruos-mcp binary, its OS control tools, and the desktop executor it talks to." loading="lazy"></button>
+        <figcaption>Architecture — modules, components and how they depend on each other.</figcaption>
+      </figure>
+      <figure class="figure diagram">
+        <span class="tier tech">Data flow</span>
+        <button type="button" class="diagram-zoom" data-src="assets/flow.svg" data-alt="A tool call travels from client request to on-screen action and back as a JSON-RPC reply." aria-label="Enlarge: A tool call travels from client request to on-screen action and back as a JSON-RPC reply."><img src="assets/flow.svg" alt="A tool call travels from client request to on-screen action and back as a JSON-RPC reply." loading="lazy"></button>
+        <figcaption>Data flow — how a request moves through the system at runtime.</figcaption>
+      </figure>
+      </div>
+      </div>
+    </details>
+
+    <details class="section" id="use-cases" open>
+      <summary>
+        <span class="num">05</span>
+        <span class="head-text">
+          <h2>What you'd actually use this for</h2>
+          <span class="q">Where would I actually use this?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">The scenarios below are real things ruOS ships today, run against an actual ruOS desktop.</p>
+      
+      <figure class="figure">
+        <span class="tier friendly">In the real world</span>
+        <button type="button" class="diagram-zoom" data-src="assets/useCase.png" data-alt="ruos in use" aria-label="Enlarge: ruos in use"><img src="assets/useCase.png" alt="ruos in use" loading="lazy"></button>
+      </figure>
+      <div class="gallery"><div class="grid">
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">1</span>
+          <span class="uc-title">See it, click it, fix it</span>
+          <span class="uc-tag">computer use</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>Some installers only offer a graphical dialog, with no command-line option. The assistant can move the mouse, click through it, and type into fields, the same way a person would. Afterward, it can take a screenshot to check the change actually happened, instead of guessing from a command's exit code.</p>
+        </div>
+      </details>
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">2</span>
+          <span class="uc-title">Split one job across a team of agents</span>
+          <span class="uc-tag">multi-agent</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>A complex, multi-file task can be handed to a swarm instead of one assistant. The swarm starts with a topology — a plan for how agents split and check each other's work — and a cap on how many agents join in. The hierarchical layout is the default, built to keep agents from drifting off task.</p>
+        </div>
+      </details>
+      <details class="case" open>
+        <summary>
+          <span class="uc-num">3</span>
+          <span class="uc-title">Pick up where it left off</span>
+          <span class="uc-tag">memory</span>
+          <span class="chev" aria-hidden="true">&rsaquo;</span>
+        </summary>
+        <div class="uc-body">
+          <p>An assistant can store a decision or a pattern in memory. Later, a different session can search that memory by meaning, not exact wording, and reuse what already worked instead of rediscovering it.</p>
+        </div>
+      </details>
+      </div></div>
+      </div>
+    </details>
+
+    <details class="section" id="get-started" open>
+      <summary>
+        <span class="num">06</span>
+        <span class="head-text">
+          <h2>Try it yourself</h2>
+          <span class="q">How do I run it myself, right now?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">There are two real, working paths today: the assistant team and memory tools (no build needed), and the control channel that lets an assistant drive a ruOS desktop's screen (needs a build and an existing desktop reachable over SSH).</p>
+      <div class="install-block"><pre class="code-block"><code>cargo build --release</code></pre></div>
+      <ol class="steps">
+        <li><strong>Check prerequisites</strong> You need a Rust toolchain (cargo) to build the control channel, and Node's npx to run the assistant tools. There's no self-serve ruOS signup yet — you point these at a ruOS desktop you already have reachable over SSH.</li>
+        <li><strong>Try the installed assistant team first</strong> Run npx @claude-flow/cli@latest --help and npx ruvector@latest --help. Both fetch on first use, no build and no install, and print the commands for running a multi-agent swarm and a persistent memory store.</li>
+        <li><strong>Build the control channel</strong> From the repo, cd mcp &amp;&amp; cargo build --release produces the ruos-mcp binary. A cargo build --release --target x86_64-unknown-linux-musl build gives a statically-linked copy you can drop straight onto the desktop.</li>
+        <li><strong>Attach Claude Code over SSH</strong> claude mcp add ruos -- ssh you@your-ruos-desktop 'DISPLAY=:0 XAUTHORITY=/run/user/1000/gdm/Xauthority /usr/local/bin/ruos-mcp' — the binary runs inside that desktop's own X session, so the connection is an ordinary encrypted login, not an open network port.</li>
+        <li><strong>What success looks like</strong> Ask Claude to screenshot the desktop or run a shell command. You get back an actual PNG image of the screen, or real command output, not a description of one.</li>
+        <li><strong>What you end up with</strong> A Claude Code session that can see and operate a real Linux desktop, split work across the assistant team, and recall memory from earlier sessions, all on one machine you already control over SSH.</li>
+        <li><strong>Next</strong> Read mcp/README.md for the full tool list and desktop-side prerequisites, and skills/README.md for the swarm, memory, and hooks commands.</li>
+      </ol>
+      </div>
+    </details>
+
+    <details class="section" id="the-pack" open>
+      <summary>
+        <span class="num">07</span>
+        <span class="head-text">
+          <h2>Knowledge pack</h2>
+          <span class="q">Does my AI get it too?</span>
+        </span>
+        <span class="chev" aria-hidden="true">&rsaquo;</span>
+      </summary>
+      <div class="body">
+      <p class="lead-in">This page is built from a small indexed set of ruOS's own documentation and source — 23 passages covering the top-level README, the ruos-mcp README (its tools, prerequisites, and architecture), the skills descriptors for the swarm, memory, and hooks tools, and the ruos-mcp Rust source itself.</p>
+      <div class="tree" style="white-space:pre"><span class="cmt"># ruos-knowledge-pack.zip</span>
+<span class="d">for-ai/</span>            <span class="cmt"># wire this into your agent</span>
+  <span class="f">ruos-kb.rvf</span>            <span class="cmt"># 384-dim vector brain (semantic search)</span>
+  <span class="f">ruos-kb.passages.jsonl</span> <span class="cmt"># full passage text (search returns TEXT)</span>
+  <span class="f">ruos-symbols.json</span>      <span class="cmt"># exact public API</span>
+  <span class="f">ruos-dep-graph.json</span>    <span class="cmt"># what depends on what</span>
+  <span class="f">ruos-entrypoints.json</span>  <span class="cmt"># build / test / run commands</span>
+  <span class="f">ask-kb.mjs</span> · <span class="f">kb-mcp-server.mjs</span>  <span class="cmt"># CLI + MCP search server</span>
+<span class="d heart">for-humans/</span>        <span class="cmt"># read first</span>
+  <span class="f heart">ruos-primer.md</span>      <span class="cmt"># the human orientation</span></div>
+      <div class="dl-cta"><a class="cta" href="ruos-knowledge-pack.zip" download>Download the knowledge pack</a><span class="dl-meta">RVF vector KB + MCP server — drop it into your own agent.</span></div>
+      <a class="dropzone" href="ruos-knowledge-pack.zip" download><span class="dz-icon" aria-hidden="true">&darr;</span><strong>Give your AI the same understanding</strong><span class="dz-hint">ruos-knowledge-pack.zip</span></a>
+      </div>
+    </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="explainer-footer" role="contentinfo">
+    <div class="wrap explainer-footer-inner">
+      <p class="ef-credit">
+        Explainer page created by <strong><a href="https://stuart-kerr-card.netlify.app" rel="author noopener" target="_blank">Stuart Kerr</a></strong> at
+        <a href="https://isovision.ai" rel="noopener" target="_blank">ISOvision</a>
+        <span class="ef-fine">Built with the open-source <a href="https://github.com/stuinfla/Repo-Explainer" rel="noopener" target="_blank">explainmyrepo</a> engine.
+        Found this valuable? <a href="https://github.com/stuinfla/Repo-Explainer" rel="noopener" target="_blank">A star on GitHub</a> genuinely helps &mdash;
+        and if something's off, <a href="https://github.com/stuinfla/Repo-Explainer/issues" rel="noopener" target="_blank">open an issue</a>: happy to help fix it.</span>
+      </p>
+      <a class="ef-cta" href="https://explainmyrepo.isovision.ai" target="_blank" rel="noopener">
+        <span class="ef-cta-lead">Would you like your own repo explainer page?</span>
+        <strong>Generate one here</strong>
+        <span class="ef-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </footer>
+  <dialog class="diagram-lightbox" id="diagram-lightbox" aria-label="Enlarged diagram">
+    <button type="button" class="lightbox-close" data-close aria-label="Close">&times;</button>
+    <img id="diagram-lightbox-img" src="" alt="">
+  </dialog>
+  <script>
+  (function () {
+    var dlg = document.getElementById('diagram-lightbox');
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+    var img = document.getElementById('diagram-lightbox-img');
+    document.querySelectorAll('.diagram-zoom').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        img.src = btn.getAttribute('data-src');
+        img.alt = btn.getAttribute('data-alt') || '';
+        dlg.showModal();
+      });
+    });
+    dlg.addEventListener('click', function (e) {
+      if (e.target === dlg || e.target.hasAttribute('data-close')) dlg.close();
+    });
+  })();
+  </script>
+</body>
+</html>
