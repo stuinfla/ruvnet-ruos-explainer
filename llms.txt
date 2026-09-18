@@ -1,13 +1,13 @@
 # ruos
 
-> An agentic desktop — the cursor moves before you do.
+> A real desktop an assistant can use.
 
-An agentic desktop — the cursor moves before you do.
+A real desktop an assistant can use.
 
 This is an independent, art-directed explainer for ruvnet's ruos — it takes a newcomer from "never seen it" to "ready to implement", grounded in a real RVF knowledge base of the source.
 
 ## What it is
-ruos: the phantom cursor — a desktop screen behind glass, its cursor drifting and clicking on its own, driven by an unseen hand wired in over SSH
+ruos: the cursor crossing from advice into action: an amber speech balloon says Finish setup, then a large mint cursor presses Done on the real desktop
 
 ## For your AI
 A downloadable knowledge pack (RVF vector KB + MCP server) ships with this page so your agent can search the source too: https://ruos-explainer.netlify.app/ruos-knowledge-pack.zip
