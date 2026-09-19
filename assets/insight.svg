@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-labelledby="ins-title ins-desc" data-archetype="exchange">
 <title id="ins-title">Sending is not seeing</title><desc id="ins-desc">A save command has been sent on the left. On the right a fresh screen picture shows that the draft is saved. The assistant needs the second piece of information to check the outcome.</desc>
-<style>text{font-family:Arial,sans-serif;font-size:23px;fill:#101b23;text-anchor:middle}.ins-heavy{font-weight:700}.ins-check{stroke-dasharray:40;stroke-dashoffset:0;animation:none}@keyframes ins-check{0%,25%{stroke-dashoffset:40}55%,100%{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.ins-check{animation:none;stroke-dashoffset:0}}</style>
-<rect width="400" height="460" rx="28" fill="#f5eedf"/>
+<style>text{font-family:Arial,sans-serif;font-size:23px;fill:#e9f6f5;text-anchor:middle}.ins-heavy{font-weight:700}.ins-check{stroke-dasharray:40;stroke-dashoffset:0;animation:none}@keyframes ins-check{0%,25%{stroke-dashoffset:40}55%,100%{stroke-dashoffset:0}}@media(prefers-reduced-motion:reduce){.ins-check{animation:none;stroke-dashoffset:0}}</style>
+<defs><linearGradient id="insight-glass" x2="1" y2="1"><stop stop-color="#173242"/><stop offset="1" stop-color="#0a1824"/></linearGradient></defs><rect width="400" height="460" rx="28" fill="url(#insight-glass)" stroke="#426476" stroke-width="1"/>
 <text class="ins-heavy" x="200" y="42" style="font-size:30px">Sending is not seeing.</text><text x="200" y="74">An action needs a check.</text>
 <text x="100" y="127" class="ins-heavy">Sent</text><text x="300" y="127" class="ins-heavy">Seen</text>
-<path d="M48 153h79l27 27v121H48Z" fill="#101b23"/><path d="M127 153v27h27" fill="none" stroke="#f5eedf" stroke-width="3"/>
+<path d="M48 153h79l27 27v121H48Z" fill="#10232f"/><path d="M127 153v27h27" fill="none" stroke="#f5eedf" stroke-width="3"/>
 <path d="M67 196h64M67 215h50M67 234h61" fill="none" stroke="#9eb1b5" stroke-width="6" stroke-linecap="round"/>
-<rect x="28" y="255" width="143" height="57" rx="16" fill="#ffd18b"/><text class="ins-heavy" x="100" y="292">Save draft</text>
-<path d="M246 153h79l27 27v121H246Z" fill="#101b23"/><path d="M325 153v27h27" fill="none" stroke="#f5eedf" stroke-width="3"/>
+<rect x="28" y="255" width="143" height="57" rx="16" fill="#ffd18b"/><text class="ins-heavy" x="100" y="292" fill="#071621" style="fill:#071621">Save draft</text>
+<path d="M246 153h79l27 27v121H246Z" fill="#10232f"/><path d="M325 153v27h27" fill="none" stroke="#f5eedf" stroke-width="3"/>
 <path d="M266 196h62M266 215h49M266 234h61" fill="none" stroke="#9eb1b5" stroke-width="6" stroke-linecap="round"/>
-<rect x="229" y="255" width="143" height="57" rx="16" fill="#4be3c8"/><text class="ins-heavy" x="299" y="292">Saved</text>
+<rect x="229" y="255" width="143" height="57" rx="16" fill="#72f4d1"/><text class="ins-heavy" x="299" y="292" fill="#071621" style="fill:#071621">Saved</text>
 <path d="M222 170v-25h27M350 145h27v25M377 298v25h-27M249 323h-27v-25" fill="none" stroke="#12816d" stroke-width="4" stroke-linecap="round"/>
-<circle cx="300" cy="349" r="23" fill="#4be3c8"/><path class="ins-check" d="m288 349 8 8 17-19" fill="none" stroke="#101b23" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M178 227h37m-10-8 10 8-10 8" fill="none" stroke="#101b23" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="300" cy="349" r="23" fill="#72f4d1"/><path class="ins-check" d="m288 349 8 8 17-19" fill="none" stroke="#071621" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178 227h37m-10-8 10 8-10 8" fill="none" stroke="#426779" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="200" y="409" class="ins-heavy">Ask for a fresh picture.</text><text x="200" y="440" style="font-size:21px">Illustrative save-and-check task</text>
 </svg>

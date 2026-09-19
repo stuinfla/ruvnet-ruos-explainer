@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" role="img" aria-labelledby="title desc">
+  <title id="title">ruOS control loop</title>
+  <desc id="desc">Three steps: screen picture, assistant chooses, tool action, then a new picture returns.</desc>
+  <rect width="1000" height="440" rx="28" fill="#050b13"/>
+  <path d="M120 254C260 80 440 80 500 220s240 174 380-34" fill="none" stroke="#1b6680" stroke-width="10" stroke-linecap="round"/>
+  <path d="M120 254C260 80 440 80 500 220s240 174 380-34" fill="none" stroke="#59f3d1" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="ui-monospace,Menlo,monospace" text-anchor="middle">
+    <g transform="translate(150 216)"><rect x="-112" y="-56" width="224" height="112" rx="18" fill="#122439" stroke="#59f3d1" stroke-width="2"/><text y="-7" fill="#59f3d1" font-size="22">01 OBSERVE</text><text y="28" fill="#d9edf0" font-size="16">SCREEN PICTURE</text></g>
+    <g transform="translate(500 190)"><rect x="-128" y="-56" width="256" height="112" rx="18" fill="#122439" stroke="#ffc273" stroke-width="2"/><text y="-7" fill="#ffc273" font-size="22">02 ACT</text><text y="28" fill="#d9edf0" font-size="16">ASSISTANT CHOOSES</text></g>
+    <g transform="translate(850 216)"><rect x="-112" y="-56" width="224" height="112" rx="18" fill="#122439" stroke="#6dbbff" stroke-width="2"/><text y="-7" fill="#6dbbff" font-size="22">03 VERIFY</text><text y="28" fill="#d9edf0" font-size="16">NEW PICTURE</text></g>
+    <text x="500" y="92" fill="#9ab4bf" font-size="20">SEE → CHOOSE → TOOL ACTION → SEE AGAIN</text>
+  </g>
+</svg>

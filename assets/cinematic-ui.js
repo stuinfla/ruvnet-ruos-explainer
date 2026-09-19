@@ -1,0 +1,15 @@
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+let paused=reduced.matches;
+const hero=document.querySelector('.hero-motion');
+hero.insertAdjacentHTML('beforeend','<span class="hero-scene-label">ONE DESKTOP · TWO WAYS IN</span><span class="scene-hint">Illustration · move to explore</span><button class="motion-toggle" type="button" aria-pressed="false">Pause motion</button>');
+const buttons=[...document.querySelectorAll('.motion-toggle')];
+function syncMotion(){const flat=document.querySelector('.hero-refusal');if(flat&&document.querySelector('[data-hero-3d]')?.dataset.renderer==='three-webgl')flat.style.setProperty('opacity',reduced.matches?'1':'0','important');buttons.forEach(b=>{b.disabled=reduced.matches;b.textContent=reduced.matches?'Reduced motion':paused?'Play motion':'Pause motion';b.setAttribute('aria-pressed',String(paused));});window.dispatchEvent(new CustomEvent('ruos:motion',{detail:{paused}}));document.documentElement.dataset.motion=paused?'paused':'playing';}
+buttons.forEach(b=>b.addEventListener('click',()=>{paused=!paused;syncMotion();}));reduced.addEventListener('change',()=>{paused=reduced.matches;syncMotion();});syncMotion();
+const host=document.querySelector('#control-canvas');const section=document.querySelector('#try-it');let api;
+const stories=[['A fresh screen picture tells the assistant what is on the desktop. It chooses what to do next.','screenshot'],['The assistant sends a save command through the control tools. Sending it does not yet prove that the note is saved.','key · Ctrl+S'],['Another screen picture shows “Saved.” The assistant can check the result before taking the next step.','screenshot → check']];
+function showPhase(n){const i=Math.max(0,Math.min(2,Number(n)-1));section.dataset.phase=String(i+1);document.querySelectorAll('[data-lab-step]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.labStep)===i+1)));document.querySelector('#phase-message').textContent=stories[i][0];document.querySelector('#phase-tool').textContent=stories[i][1];}
+document.querySelectorAll('[data-lab-step]').forEach(b=>b.addEventListener('click',()=>{showPhase(b.dataset.labStep);api?.setPhase(Number(b.dataset.labStep));}));
+async function startLoop(){if(host.dataset.started)return;host.dataset.started='yes';if(reduced.matches){host.dataset.mode='reduced-motion';return;}try{const mod=await import('./loop3d.js');api=await mod.mount(host,{onPhase:showPhase});api?.setPaused(paused);section.classList.add('enhanced');}catch(e){host.dataset.mode='fallback';console.warn('ruOS illustration: showing static fallback',e.message);}}
+const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){startLoop();observer.disconnect();}},{rootMargin:'250px'});observer.observe(host);
+window.addEventListener('ruos:motion',e=>api?.setPaused(Boolean(e.detail?.paused)));
+let ticking=false;addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty('--scroll',`${max>0?scrollY/max*100:0}%`);ticking=false;});},{passive:true});

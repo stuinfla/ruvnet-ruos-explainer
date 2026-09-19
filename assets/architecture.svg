@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 660" role="img" aria-labelledby="arch-title arch-desc" data-archetype="containment">
 <title id="arch-title">Two paths into one Linux machine</title><desc id="arch-desc">A person uses a viewer to see the desktop. An assistant starts ruos-mcp through SSH. On the same machine, ruos-mcp calls mouse, keyboard, screenshot and shell tools. A separate local executor handles system and display actions.</desc>
-<style>text{font-family:Arial,sans-serif;font-size:22px;fill:#101b23;text-anchor:middle}.heavy{font-weight:700}.light{fill:#f5eedf}.muted{fill:#b9cbd0}.line{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.progress{animation:arch-fill 7s ease infinite}@keyframes arch-fill{0%,35%{width:42px}60%,100%{width:90px}}@media(prefers-reduced-motion:reduce){.progress{animation:none;width:90px}}</style>
-<rect width="400" height="660" rx="28" fill="#f5eedf"/>
+<style>text{font-family:Arial,sans-serif;font-size:22px;fill:#e9f6f5;text-anchor:middle}.heavy{font-weight:700}.light{fill:#e9f6f5}.muted{fill:#b9cbd0}.line{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.progress{animation:arch-fill 7s ease infinite}@keyframes arch-fill{0%,35%{width:42px}60%,100%{width:90px}}@media(prefers-reduced-motion:reduce){.progress{animation:none;width:90px}}</style>
+<defs><linearGradient id="architecture-glass" x2="1" y2="1"><stop stop-color="#173242"/><stop offset="1" stop-color="#0a1824"/></linearGradient></defs><rect width="400" height="660" rx="28" fill="url(#architecture-glass)" stroke="#426476" stroke-width="1"/>
 <text x="200" y="38" class="heavy" style="font-size:28px">Two paths. One machine.</text>
 <text x="95" y="85" class="heavy">You</text><text x="305" y="85" class="heavy">Assistant</text>
 <path class="line" stroke="#a06b18" d="M95 97V214m-7-10 7 10 7-10"/><path class="line" stroke="#087d6b" d="M305 97V214m-7-10 7 10 7-10"/>
-<rect x="36" y="110" width="118" height="31" rx="15" fill="#ffd18b"/><text x="95" y="134">View</text><rect x="254" y="110" width="102" height="31" rx="15" fill="#4be3c8"/><text x="305" y="134">SSH</text>
-<rect x="20" y="161" width="360" height="457" rx="22" fill="#101b23"/>
+<rect x="36" y="110" width="118" height="31" rx="15" fill="#ffd18b"/><text x="95" y="134" fill="#071621" style="fill:#071621">View</text><rect x="254" y="110" width="102" height="31" rx="15" fill="#72f4d1"/><text x="305" y="134" fill="#071621" style="fill:#071621">SSH</text>
+<rect x="20" y="161" width="360" height="457" rx="22" fill="#10232f"/>
 <text x="200" y="195" class="heavy light">One Linux machine</text>
 <path class="line" stroke="#ffd18b" d="M95 207v28"/><path class="line" stroke="#4be3c8" d="M305 207v28"/>
-<rect x="40" y="237" width="137" height="106" rx="13" fill="#f5eedf"/><text x="109" y="271" class="heavy">Desktop</text><rect x="63" y="290" width="91" height="12" rx="6" fill="#c7d3cf"/><rect class="progress" x="63" y="290" width="90" height="12" rx="6" fill="#169782"/><text x="109" y="329">screen</text>
-<rect x="223" y="237" width="137" height="106" rx="13" fill="#4be3c8"/><text x="292" y="280" class="heavy">ruos-mcp</text><text x="292" y="315">This repo</text>
+<rect x="40" y="237" width="137" height="106" rx="13" fill="#153040"/><text x="109" y="271" class="heavy">Desktop</text><rect x="63" y="290" width="91" height="12" rx="6" fill="#c7d3cf"/><rect class="progress" x="63" y="290" width="90" height="12" rx="6" fill="#169782"/><text x="109" y="329">screen</text>
+<rect x="223" y="237" width="137" height="106" rx="13" fill="#72f4d1"/><text x="292" y="280" class="heavy" fill="#071621" style="fill:#071621">ruos-mcp</text><text x="292" y="315" fill="#071621" style="fill:#071621">This repo</text>
 <path class="line" stroke="#4be3c8" d="M292 344v31m-7-9 7 9 7-9M108 385v-36m-7 9 7-9 7 9"/><text x="249" y="372" class="light" style="font-size:21px">calls</text>
 <rect x="40" y="386" width="320" height="89" rx="13" fill="#213640"/>
 <text x="200" y="418" class="light heavy">Desktop tools</text><text x="200" y="451" class="muted">Input · capture · shell</text>
 <path class="line" stroke="#4be3c8" d="M363 289h8v260h-10m7-7-7 7 7 7"/>
 <rect x="40" y="507" width="320" height="87" rx="13" fill="#ffd18b"/>
-<text x="200" y="537" class="heavy">Local executor</text><text x="200" y="569">Required: system / display</text>
+<text x="200" y="537" class="heavy" fill="#071621" style="fill:#071621">Local executor</text><text x="200" y="569" fill="#071621" style="fill:#071621">Required: system / display</text>
 <text x="200" y="646" style="font-size:21px">SSH = encrypted remote login</text>
 </svg>

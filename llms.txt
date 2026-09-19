@@ -7,7 +7,7 @@ A real desktop an assistant can use.
 This is an independent, art-directed explainer for ruvnet's ruos — it takes a newcomer from "never seen it" to "ready to implement", grounded in a real RVF knowledge base of the source.
 
 ## What it is
-ruos: the cursor crossing from advice into action: an amber speech balloon says Finish setup, then a large mint cursor presses Done on the real desktop
+ruos: A shared desktop made physical: luminous layered windows, a visible action, and a fresh picture that closes the loop.
 
 ## For your AI
 A downloadable knowledge pack (RVF vector KB + MCP server) ships with this page so your agent can search the source too: https://ruos-explainer.netlify.app/ruos-knowledge-pack.zip

@@ -940,20 +940,20 @@ footer .fine { margin-top: var(--space-l); padding-top: var(--space-m); border-t
 
 /* ── per-repo THEME (expression knobs only — skeleton untouched) ── */
 :root {
-  --bg: #05070a;
-  --bg-2: #0b1018;
-  --surface: #0f1720;
-  --surface-2: #141d29;
+  --bg: #050a12;
+  --bg-2: #0a1520;
+  --surface: #0b1722;
+  --surface-2: #142636;
   --ridge: #233041;
-  --ink: #e6f1f5;
-  --ink-2: #a8bac6;
-  --muted: #5c707d;
+  --ink: #eaf5f6;
+  --ink-2: #adc4ce;
+  --muted: #8ba6b6;
   --faint: #2a3644;
   --on-accent: #031014;
-  --accent: #4be3c8;
-  --accent-2: #f2b04c;
-  --accent-3: #8b7bf0;
-  --spectrum: linear-gradient(96deg, #4be3c8, #6fb1e6, #8b7bf0, #f2b04c);
+  --accent: #61f5d4;
+  --accent-2: #ffcb86;
+  --accent-3: #8bbfff;
+  --spectrum: linear-gradient(110deg,#67f5d0,#8dddf7);
   --ok: #37d67a;
   --warn: #f2b04c;
   --bad: #f2536b;
@@ -961,7 +961,7 @@ footer .fine { margin-top: var(--space-l); padding-top: var(--space-m); border-t
   --radius-s: 6px;
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   --hero-grad-angle: 160deg;
-  --display: Space Grotesk;
-  --sans: Inter;
+  --display: Sora;
+  --sans: Manrope;
   --mono: JetBrains Mono;
 }
