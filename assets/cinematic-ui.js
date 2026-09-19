@@ -13,3 +13,6 @@ async function startLoop(){if(host.dataset.started)return;host.dataset.started='
 const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){startLoop();observer.disconnect();}},{rootMargin:'250px'});observer.observe(host);
 window.addEventListener('ruos:motion',e=>api?.setPaused(Boolean(e.detail?.paused)));
 let ticking=false;addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty('--scroll',`${max>0?scrollY/max*100:0}%`);ticking=false;});},{passive:true});
+// Settle direct section links after fonts finish changing the document height.
+const initialHash=location.hash;
+if(initialHash){let interrupted=false;const cancel=()=>{interrupted=true;};for(const name of ['wheel','touchstart','keydown'])addEventListener(name,cancel,{once:true,passive:true});Promise.race([document.fonts.ready,new Promise(resolve=>setTimeout(resolve,5000))]).then(()=>{if(interrupted||location.hash!==initialHash)return;const target=document.getElementById(initialHash.slice(1));if(target){if(target.tagName==='DETAILS')target.open=true;requestAnimationFrame(()=>target.scrollIntoView({behavior:'instant',block:'start'}));}});}
